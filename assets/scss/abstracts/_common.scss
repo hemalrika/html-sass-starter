@@ -2,8 +2,8 @@
 ************
 *************************
 
-   Template Name: Surgico - Skin Surgery HTML Template
-   Description: Surgico - Skin Surgery HTML Template. It is a modern Template and fits for all kind of surgery website.
+   Template Name: Kidba - Kindergarten School Education HTML Template
+   Description: Kidba - Kindergarten School Education HTML Template. It is a modern Template and fits for all kind of surgery website.
    Author: _ThemePhi
    Version: 1.0
 
@@ -25,9 +25,9 @@ CSS INDEX
 @use './mixins' as *;
 @use './colors' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Prata:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Nunito+Sans:wght@300;400;600;700&display=swap');
  body {
-    font-family: $dmsans;
+    font-family: $nunitosans;
     font-weight: 400;
     font-style: normal;
     color: var(--clr-body-text);
@@ -80,7 +80,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $prata;
+	font-family: $gorditas;
 	color: var(--clr-body-heading);
 	margin-top: 0px;
     line-height: 1.4;
@@ -119,10 +119,10 @@ ul {
 	padding: 0px;
 }
 p {
-    font-family: $dmsans;
+    font-family: $nunitosans;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 26px;
     color: var(--clr-body-text);
     
 }
@@ -264,30 +264,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 @media (min-width: 1400px) {
     .container{
-        max-width: 1200px;
-        &.container-full-1 {
-            max-width: 1430px;
-        }
-    }
-    .row {
-        &.row-cols-xxl-7 {
-            & > * {
-                width: 14.2857%;
-                flex: 0 0 auto;
-                --bs-gutter-x: 10px;
-            }
-        }
-    }
-}
-
-@media (min-width: 1850px) {
-    .sg-container-full {
-        max-width: 1850px;
-    }
-}
-@media (min-width: 1400px) {
-    .sg-container-full {
-        max-width: 1370px;
+        max-width: 1320px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 /* <<<<<<<    Declaration   >>>>>>>>> */
@@ -365,80 +344,3 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 
-
-
-/*---------------------------------------------------*/
-/*  mouse cursor animation
-/*---------------------------------------------------*/
-.mouseCursor {
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    border-radius: 50%;
-    transform: translateZ(0);
-    visibility: hidden;
-  }
-  
-  .cursor-inner {
-    margin-left: -3px;
-    margin-top: -3px;
-    width: 6px;
-    height: 6px;
-    z-index: 10000001;
-    background-color: #ff3900;
-    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  }
-  
-  .cursor-inner.cursor-hover {
-      margin-left: -30px;
-      margin-top: -30px;
-      width: 60px;
-      height: 60px;
-      background-color: #ff3900;
-      opacity: 0.5;
-  }
-  
-  .cursor-outer {
-    margin-left: -15px;
-    margin-top: -15px;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #ff3900;
-    box-sizing: border-box;
-    z-index: 10000000;
-    opacity: 0.5;
-    transition: all 0.08s ease-out;
-  }
-  
-  .cursor-outer.cursor-hover {
-    opacity: 0;
-  }
-  
-  .mim_tm_all_wrap[data-magic-cursor=hide] .mouseCursor {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    z-index: -1111;
-  }
-  .admin-cursor-button-list-1 .admin-cursor-default {line-height: 40px;display: inline-block;border: 0;background: orangered;color: #fff;padding: 0 20px;height: 40px;font-size: 20px;margin-right: 8px;}
-  
-  .admin-cursor-button-list-1 .admin-cursor-magic {border: 0;
-      background: orangered;
-      line-height: 40px;
-      color: #fff;
-      display: inline-block;
-      padding: 0 20px;
-      height: 40px;
-      font-size: 20px;
-    }
-    .mouse-cursor-invisible {
-      display: none;
-      &.visible {
-        display: block;
-      }
-    }
-    .theme-bg {
-        background-color: var(--clr-theme-primary);
-    }
